@@ -94,4 +94,5 @@ EXT_MAPPING = {
     ".dockerfile": "dockerfile",
     ".md": "markdown",
     ".toml": "toml",
+    ".lock": "lock",
 }
