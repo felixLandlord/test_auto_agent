@@ -43,7 +43,7 @@ class CalculatorService:
     @staticmethod
     def root(a: float, n: float = 2) -> float:
         if a < 0 and n % 2 == 0:
-            raise ValueError("Cannot take even root of a negative number.")
+            raise ValueError("Cannot take even root of a negative number")
         return math.pow(a, 1/n)
 
     @staticmethod
