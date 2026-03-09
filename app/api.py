@@ -2,7 +2,7 @@ from fastapi import APIRouter, HTTPException
 from pydantic import BaseModel
 from app.service import CalculatorService
 
-router = APIRouter()
+router = APIRouter(prefix="/calculator")
 
 class CalculationInput(BaseModel):
     a: float
