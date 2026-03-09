@@ -44,7 +44,7 @@ async def multiply(input: CalculationInput):
 @router.post("/divide", response_model=ResultOutput)
 async def divide(input: CalculationInput):
     if input.b is None:
-        raise HTTPException(status_code=400, detail="Missing parameter 'b' for division")
+        raise HTTPException(status_code=400, detail="Missing parameter 'b' for division.")
     try:
         result = CalculatorService.divide(input.a, input.b)
         return ResultOutput(operation="division", result=result)
